@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wafa Lahmamssi</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="mediaquesries.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Wafa Lahmamssi
+      </div>
+      <div>
+          <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+     
+  <nav id="hamburger-nav">
+    <div class="logo">John Doe</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </nav>
+  
+  <!-- SECTIONS -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-picture.jpg" alt="wafa Lahmamssi profile picture" />
+    </div>
+    
+    <div class="section__text">
+      <!-- <p class="section__text__p1">Hello, I'm</p> -->
+      <h1 class="title">Wafa Lahmamssi</h1>
+      <p class="section__text__p2">IoT Developer</p>
+      <p class="section__text__p3">Full-Stack Java Engineer with a an enthusiasm for IoT and creating creative. Always up for a new tech challenge</p>
+      <div id="socials_container">
+        <a href="https://github.com/Wlahmamssi69" target="_blank" class="social-link">
+          <i class="fa fa-github"></i>
+        </a>
+                <a href="https://www.linkedin.com/in/wafalahmamssi/" target="_blank" class="social-link">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+             
+                <a href="https://twitter.com/WLahmamssi" target="_blank" class="social-link">
+                  <i class="fa fa-twitter"></i>
+                </a>
+     </div>
+    </div>
+      
+    </div>
+  </section>
+  
+
+
+    <script src="main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+/* basic reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/*NAVIGATION*/
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 5rem 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+  display: flex;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* SECTION #Profile */
+
+#profile {
+  gap: 5rem;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 330px;
+  width: 550px;
+}
+
+.section__pic-container img {
+  border-radius: 50%;
+  height: 80% !important;
+  width: 60% !important;
+}
+.title{
+  font-size: 50px;
+}
+.section__text {
+  max-width: 30vw;
+}
+
+.section__text p,
+.title {
+  align-self: center;
+  margin-top: 1rem;
+}
+.title,.section__text__p1,.section__text__p2{
+  text-align: center;
+  
+}
+
+
+.section__text__p1 {
+  font-size: 26px;
+}
+
+.section__text__p3 {
+  font-size: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+#socials_container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap:1rem;
+  
+}
+
+.social-link{
+border: 1.5px solid #000000a3;
+padding: 0.5rem;
+background-color:rgba(124, 124, 124, 0.386);
+border-radius: 50%;
+
+}
