@@ -95,26 +95,33 @@ section {
   margin: 5rem 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-  display: flex;
+  
 }
 
-.section-container {
-  display: flex;
-}
 
 /* SECTION #Profile */
 
 #profile {
+  display: flex;
   gap: 5rem;
+  
 }
+.details-container{
+  border:1px solid rgb(85, 85, 85);
+  border-radius: 5% ;
+  width: 210px;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  text-align: center;
 
+}
 .section__pic-container {
   display: flex;
   height: 330px;
   width: 550px;
 }
 
-.section__pic-container img {
+.profile-pic {
   border-radius: 50%;
   height: 80% !important;
   width: 60% !important;
@@ -123,7 +130,7 @@ section {
   font-size: 50px;
 }
 .section__text {
-  max-width: 30vw;
+  width: 24vw;
 }
 
 .section__text p,
@@ -142,7 +149,7 @@ section {
 }
 
 .section__text__p3 {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: justify;
@@ -162,4 +169,348 @@ padding: 0.5rem;
 background-color:rgba(124, 124, 124, 0.386);
 border-radius: 50%;
 
+}
+
+/* About section */
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+.section-container{
+  display: flex;
+  height: 80%;
+  align-items: center;
+  gap: 4rem;
+}
+
+
+.about-pic {
+  border-radius: 10%;
+  width: 97% ;
+  height: 90% ;
+  margin: auto ;
+  display: block;
+
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+
+
+#about{
+  font-size:18px;
+  background-color: #f4f4f4;
+  border-radius: 5%;
+}
+
+
+/* EXPERIENCE SECTION */
+
+/* General section styling */
+#experience {
+  padding: 2rem 1rem;
+  background-color: #f4f4f4;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5%;
+}
+
+.section__text__p1 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Experience container */
+/* General section styling */
+.icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.icon-docker{
+  width: 90px;
+  height: 24px;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.about-containers-experience{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the items horizontally */
+  gap: 1rem; /* Space between elements */
+}
+
+.experience-details-container{
+  flex: 1 1 100px; /* Adjust the width of each item, with a minimum width */
+    max-width: 300px; /* Optional max width if you want to limit the size */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7;
+    min-height: 300px;
+    padding: 4px;
+    padding-top:1rem;
+  }
+  article{
+    display: flex;
+    padding: 6px;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  .article-container{
+    min-height: 80%;
+  }
+
+  /* PROJECTS SECTION */
+
+
+
+/* CONTACT */
+
+
+/* PROJECTS SECTION */
+#projects {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 18px;
+  background-color: #f4f4f4;
+  border-radius: 5%;
+  height: fit-content;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+
+.projects__intro-text {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.projects__title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.projects__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.projects__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(250, 250, 250);
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 360px;
+    width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.projects__item:hover {
+  transform: translateY(-5px);
+}
+
+.projects__image-wrapper {
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 1rem;
+}
+
+.projects__image {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects__item-title {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.projects__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.projects__button {
+  padding: 0.5rem 1rem;
+  color: black;
+  border: 1px solid rgb(163, 163, 163);
+  background-color: #fafafa;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.projects__button:hover {
+  background-color: rgb(163, 163, 163);
+  transform: scale(1.05);
+}
+
+
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: space-around;
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+  min-width: 51vw;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: 18px;
 }
