@@ -12,6 +12,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 26px;
+  background-color: #DDD0C8 ;
 }
 
 html {
@@ -117,20 +118,28 @@ section {
 }
 .section__pic-container {
   display: flex;
-  height: 330px;
-  width: 550px;
+  height: 50% !important;
+  width: 25% !important;
+}
+
+li{
+  margin-bottom: 1.5rem;
 }
 
 .profile-pic {
   border-radius: 50%;
-  height: 80% !important;
+  height: 60% !important;
   width: 60% !important;
 }
+.about-me-btn{
+width: 15rem;
+}
+
 .title{
   font-size: 50px;
 }
 .section__text {
-  width: 24vw;
+  width: 50vw;
 }
 
 .section__text p,
@@ -140,6 +149,7 @@ section {
 }
 .title,.section__text__p1,.section__text__p2{
   text-align: center;
+  margin-bottom: 2rem;
   
 }
 
@@ -166,7 +176,7 @@ section {
 .social-link{
 border: 1.5px solid #000000a3;
 padding: 0.5rem;
-background-color:rgba(124, 124, 124, 0.386);
+background-color:#DDD0C8;
 border-radius: 50%;
 
 }
@@ -217,17 +227,21 @@ border-radius: 50%;
 
 #about{
   font-size:18px;
-  background-color: #f4f4f4;
+  background-color: #DDD0C8;
   border-radius: 5%;
 }
 
+.text-container{
+  font-size: 22px;
+  padding: 2px;
+}
 
 /* EXPERIENCE SECTION */
 
 /* General section styling */
 #experience {
   padding: 2rem 1rem;
-  background-color: #f4f4f4;
+  background-color: #DDD0C8;
   text-align: center;
   font-size: 18px;
   border-radius: 5%;
@@ -305,12 +319,12 @@ border-radius: 50%;
 
 /* PROJECTS SECTION */
 #projects {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
   text-align: center;
   font-size: 18px;
-  background-color: #f4f4f4;
-  border-radius: 5%;
+  background-color: #DDD0C8;
   height: fit-content;
+  width: 100%;
 }
 
 .btn-container {
@@ -323,8 +337,11 @@ border-radius: 50%;
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 8rem;
+
   border-radius: 2rem;
+}
+.project-btn{
+  width: 8rem;
 }
 
 .btn-color-1,
@@ -394,8 +411,10 @@ border-radius: 50%;
 
 .projects__title {
   font-size: 2.5rem;
-  color: #333;
+  /* color: #333; */
+  color: #323232;
   margin-bottom: 1.5rem;
+
 }
 
 .projects__container {
@@ -464,6 +483,72 @@ border-radius: 50%;
 }
 
 
+/* THOUGHTS */
+/* Thoughts Section */
+#thoughts {
+  background-color: #DDD0C8; /* Beige background */
+  color: #323232; /* Dark grey text color */
+  padding: 50px 20px;
+  text-align: center;
+
+}
+
+#thoughts .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #323232; /* Dark grey title */
+  margin-bottom: 20px;
+}
+
+.thoughts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.thought-item {
+  background-color: #ef4c36; /* White card background */
+  color: #323232; /* Dark grey text */
+  border: 2px solid #323232; /* Dark grey border for clean design */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thought-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.thought-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #323232;
+}
+
+.thought-text {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #121111
+  ;
+
+}
+
+@media (min-width: 768px) {
+  .thoughts-container {
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout on wider screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .thoughts-container {
+    grid-template-columns: repeat(3, 1fr); /* Three-column layout on large screens */
+  }
+}
 
 /* CONTACT */
 
@@ -513,4 +598,23 @@ footer {
 footer p {
   text-align: center;
   font-size: 18px;
+}
+
+#socials_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.social-link {
+  color: #323232; /* Default icon color */
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #ef4c36; /* Hover color */
+  transform: scale(1.2); /* Optional hover effect */
 }
