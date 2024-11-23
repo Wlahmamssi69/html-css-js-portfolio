@@ -55,14 +55,16 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: #ef4c36;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: #323232;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #040404;
+  margin-top: -2.1rem;
 }
 
 .logo:hover {
@@ -102,11 +104,6 @@ section {
 
 /* SECTION #Profile */
 
-#profile {
-  display: flex;
-  gap: 5rem;
-  
-}
 .details-container{
   border:1px solid rgb(85, 85, 85);
   border-radius: 5% ;
@@ -617,4 +614,109 @@ footer p {
 .social-link:hover {
   color: #ef4c36; /* Hover color */
   transform: scale(1.2); /* Optional hover effect */
+}
+
+
+/* Overall Layout */
+#profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #DDD0C8; /* Neutral light tone */
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  /* gap: 1rem; */
+}
+
+/* Profile Picture Styling */
+.section__pic-container {
+  flex: 1;
+  text-align: center;
+}
+
+.section__pic-container img {
+  padding: 5px;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%; /* Circle Image */
+  border: 1.5px solid #323232; /* Accent Border */
+}
+
+/* Text Styling */
+.section__text {
+  padding: 0 1rem;
+    text-align: left;
+    color: #323232;
+    width: 70%;
+}
+
+.section__text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #323232;
+  margin-bottom: 3rem;
+}
+
+.section__text p {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #323232;
+  margin-bottom: 3rem;
+
+}
+
+
+.profile_item_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.profile_item{
+  background-color: #DDD0C8;
+  color: #323232;
+  border: 2px solid #323232;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 20rem;
+  height: 3.5rem;
+  display: flex;
+
+}
+
+.profile_item_text{
+  height: 20px;
+  margin-top: 5px;
+  font-size: 24px;
+}
+.profile_item_emoji{
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .section__text {
+    margin-top: 1rem;
+    width: 100%; /* Full width for smaller screens */
+  }
+
+
+
+  .about-me-btn {
+    flex: 1 1 100%; /* Full width buttons on smaller screens */
+    max-width: none;
+  }
 }
