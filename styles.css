@@ -180,8 +180,9 @@ border-radius: 50%;
 /* About Section */
 section#about {
   padding: 4rem 2rem;
+  background-color: #32323235;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
   margin: 3rem auto;
   max-width: 1200px;
   display: flex;
@@ -328,160 +329,160 @@ section#about {
 
 /* CONTACT */
 
-
-/* PROJECTS SECTION */
-#projects {
-  /* padding: 2rem 0; */
+/* Projects Section */
+section#projects {
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 3rem auto;
+  max-width: 1000px;
   text-align: center;
-  font-size: 18px;
-  background-color: #DDD0C8;
-  height: fit-content;
-  width: 100%;
 }
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-
-  border-radius: 2rem;
-}
-.project-btn{
-  width: 8rem;
-}
-
-.btn-color-1,
-.btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
-}
-
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-  background: none;
-}
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-  gap: 1rem;
-}
-
-
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
 
 .projects__intro-text {
-  font-size: 18px;
-  color: #555;
+  font-size: 1.2rem;
+  color: #323232;
   margin-bottom: 0.5rem;
 }
 
 .projects__title {
-  font-size: 2.5rem;
-  /* color: #333; */
+  font-size: 2rem;
   color: #323232;
-  margin-bottom: 1.5rem;
-
+  margin-bottom: 4rem;
 }
 
+/* Project Cards */
 .projects__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .projects__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: rgb(250, 250, 250);
-  border: 1px solid rgb(163, 163, 163);
-  border-radius: 1rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  max-width: 360px;
-    width: 100%;
-  transition: transform 0.3s ease;
+  background-color: #DDD0C8;
+  border: 1px solid #323232;
+  border-radius: 8px;
+  width: 220px; /* Reduced width */
+  padding: 0.8rem; /* Reduced padding */
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projects__item:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Project Images */
 .projects__image-wrapper {
   width: 100%;
-  max-height: 200px;
+  height: 120px; /* Reduced height */
+  overflow: hidden;
+  border-radius: 5px;
   margin-bottom: 1rem;
 }
 
 .projects__image {
-  border-radius: 1rem;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
+.projects__image-wrapper:hover .projects__image {
+  transform: scale(1.1);
+}
+
+/* Project Titles */
 .projects__item-title {
-  margin: 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1rem; /* Reduced font size */
+  font-weight: bold;
   color: #333;
+  margin-bottom: 1rem;
 }
 
-.projects__buttons {
+/* Buttons */
+.btn-container {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  justify-content: center;
+  gap: 0.8rem; /* Reduced gap */
+  margin-top: 0.8rem; /* Reduced margin */
 }
 
-.projects__button {
-  padding: 0.5rem 1rem;
-  color: black;
-  border: 1px solid rgb(163, 163, 163);
-  background-color: #fafafa;
+.project-btn {
+  background-color: #ef4c36b7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 0.8rem; /* Reduced padding */
+  font-size: 0.9rem; /* Reduced font size */
   cursor: pointer;
-  border-radius: 0.5rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.projects__button:hover {
-  background-color: rgb(163, 163, 163);
+.project-btn:hover {
+  background-color: #333;
   transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .projects__title {
+    font-size: 1.8rem; /* Reduced title font size */
+  }
+
+  .projects__container {
+    gap: 0.8rem; /* Reduced gap */
+  }
+
+  .projects__item {
+    width: 180px; /* Smaller width */
+    padding: 0.6rem; /* Reduced padding */
+  }
+
+  .projects__image-wrapper {
+    height: 100px; /* Reduced height */
+  }
+
+  .projects__item-title {
+    font-size: 0.9rem; /* Reduced title font size */
+  }
+
+  .project-btn {
+    font-size: 0.8rem; /* Reduced font size */
+    padding: 0.3rem 0.7rem; /* Reduced padding */
+  }
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .projects__title {
+    font-size: 2rem;
+  }
+
+  .projects__container {
+    gap: 1rem;
+  }
+
+  .projects__item {
+    width: 200px;
+    padding: 0.8rem;
+  }
+
+  .projects__image-wrapper {
+    height: 120px;
+  }
+
+  .projects__item-title {
+    font-size: 1rem;
+  }
+
+  .project-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
 }
 
 
@@ -499,18 +500,20 @@ section#about {
   font-size: 2.5rem;
   font-weight: bold;
   color: #323232; /* Dark grey title */
-  margin-bottom: 20px;
+  margin-bottom: 3rem;
 }
 
 .thoughts-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 18px;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .thought-item {
-  background-color: #ef4c36; /* White card background */
+  background-color: #3232321a; /* White card background */
   color: #323232; /* Dark grey text */
   border: 2px solid #323232; /* Dark grey border for clean design */
   border-radius: 12px;
@@ -526,10 +529,10 @@ section#about {
 }
 
 .thought-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #323232;
+  color: #ef4c3674;
 }
 
 .thought-text {
@@ -622,17 +625,17 @@ footer p {
 }
 
 
-/* Overall Layout */
+Overall Layout
 #profile {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #DDD0C8; /* Neutral light tone */
+  background-color: #DDD0C8; 
   padding: 2rem;
   border-radius: 10px;
   margin: 2rem auto;
   max-width: 1200px;
-  /* gap: 1rem; */
+  
 }
 
 /* Profile Picture Styling */
@@ -723,4 +726,19 @@ footer p {
     flex: 1 1 100%; /* Full width buttons on smaller screens */
     max-width: none;
   }
+}
+
+section#about{
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 3rem auto;
+  max-width: 1000px;
+  text-align: center;
+}
+section#profile{
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 3rem auto;
+  max-width: 1000px;
+  text-align: center;
 }
